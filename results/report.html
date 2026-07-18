@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Regression Report — v2</title>
+    <title>Regression Report â€” v1</title>
     <style>
       body {
         font-family: -apple-system, sans-serif;
@@ -81,8 +81,8 @@
   <body>
     <h1>Regression Report</h1>
     <div class="meta">
-      Prompt version: <strong>v2</strong> · Model: gemini-3.1-flash-lite
-      · 20260711T080545Z
+      Prompt version: <strong>v1</strong> Â· Model: gemini-3.1-flash-lite
+      Â· 20260718T110643Z
     </div>
 
     <div class="scorecard">
@@ -95,20 +95,20 @@
       <div class="metric">
         <div class="metric-label">Current pass rate</div>
         <div class="metric-value">
-          93.0%
+          83.0%
         </div>
       </div>
       <div class="metric">
         <div class="metric-label">Delta</div>
         <div
-          class="metric-value delta-positive"
+          class="metric-value delta-negative"
         >
-          1.0%
+          -9.0%
         </div>
       </div>
     </div>
 
-    <h2>Regressed Cases (2)</h2>
+    <h2>Regressed Cases (9)</h2>
     
     <table>
       <tr>
@@ -119,29 +119,84 @@
       </tr>
       
       <tr>
-        <td>case_020</td>
-        <td>My bank flagged your charge as fraud and reversed it, but you've suspended my account. How do I resolve this?</td>
-        <td>{'category': 'billing', 'summary': "The customer's account was suspended due to a chargeback caused by a bank-flagged transaction."}</td>
-        <td>{'category': 'account', 'summary': "Customer's account was suspended following a bank-initiated chargeback due to a fraud flag."}</td>
+        <td>case_013</td>
+        <td>I paid for the yearly plan but my dashboard still shows 'free tier' features only.</td>
+        <td>{'category': 'billing', 'summary': "The customer's dashboard does not reflect their paid yearly subscription status."}</td>
+        <td>{'category': 'technical', 'summary': "The user's account dashboard is not reflecting the yearly subscription upgrade and is still limited to free tier features."}</td>
       </tr>
       
       <tr>
-        <td>case_096</td>
-        <td>Do you have a status page where I can check for ongoing outages before I report one?</td>
-        <td>{'category': 'general', 'summary': 'The customer is inquiring about the availability of a status page to check for ongoing service outages.'}</td>
-        <td>{'category': 'technical', 'summary': 'Customer is inquiring about the location of a status page to check for service outages.'}</td>
+        <td>case_021</td>
+        <td>Is there a way to pay via bank transfer instead of credit card for our annual contract?</td>
+        <td>{'category': 'billing', 'summary': 'Customer is requesting to switch their payment method from credit card to bank transfer for an annual contract.'}</td>
+        <td>{'category': 'general', 'summary': 'The customer is inquiring about alternative payment methods for an annual contract.'}</td>
+      </tr>
+      
+      <tr>
+        <td>case_053</td>
+        <td>I need to transfer ownership of our team workspace to a new admin, how do I do that?</td>
+        <td>{'category': 'account', 'summary': 'The customer is asking for instructions on how to transfer ownership of their team workspace to a new administrator.'}</td>
+        <td>{'category': 'general', 'summary': 'The customer is asking for instructions on how to transfer ownership of their team workspace to a new administrator.'}</td>
+      </tr>
+      
+      <tr>
+        <td>case_058</td>
+        <td>how do i add a team member who doesnt have a company email yet</td>
+        <td>{'category': 'account', 'summary': 'Customer needs instructions on adding a team member who lacks a company email address.'}</td>
+        <td>{'category': 'general', 'summary': 'The customer is asking for instructions on how to add a team member without a company email address.'}</td>
+      </tr>
+      
+      <tr>
+        <td>case_063</td>
+        <td>wait why does it say im on the 'basic' plan, i signed up for premium 6 months ago???</td>
+        <td>{'category': 'account', 'summary': 'Customer is reporting an issue where their account plan is incorrectly listed as basic instead of the premium plan they purchased.'}</td>
+        <td>{'category': 'billing', 'summary': 'The customer is reporting a discrepancy between their current billing plan and the premium plan they believe they purchased.'}</td>
+      </tr>
+      
+      <tr>
+        <td>case_064</td>
+        <td>Can I downgrade my role from admin to regular member on the team account?</td>
+        <td>{'category': 'account', 'summary': 'The customer is requesting to change their account permissions from admin to regular member.'}</td>
+        <td>{'category': 'general', 'summary': 'The user is inquiring about the process for changing their user role from admin to regular member.'}</td>
+      </tr>
+      
+      <tr>
+        <td>case_069</td>
+        <td>Need to update the billing contact on our account to a different person in finance.</td>
+        <td>{'category': 'account', 'summary': 'Customer needs to update the designated billing contact person on their account.'}</td>
+        <td>{'category': 'billing', 'summary': 'The customer wants to update the billing contact information for their account.'}</td>
+      </tr>
+      
+      <tr>
+        <td>case_073</td>
+        <td>Can I have two accounts under the same email for personal and work use?</td>
+        <td>{'category': 'account', 'summary': 'Customer is inquiring about the possibility of having multiple accounts linked to a single email address for different purposes.'}</td>
+        <td>{'category': 'general', 'summary': 'The user is inquiring about the possibility of creating multiple accounts using a single email address for different purposes.'}</td>
+      </tr>
+      
+      <tr>
+        <td>case_074</td>
+        <td>I keep getting a 'this account is under review' banner for 3 days now, is something wrong?</td>
+        <td>{'category': 'account', 'summary': "The user is unable to access their account due to a persistent 'under review' status."}</td>
+        <td>{'category': 'technical', 'summary': "The user is unable to access their account due to a persistent 'under review' error message for the past three days."}</td>
       </tr>
       
     </table>
     
 
-    <h2>Pass Rate Trend (last 1 runs)</h2>
+    <h2>Pass Rate Trend (last 2 runs)</h2>
     <div class="trend">
       
       <div
         class="bar"
         style="height: 55px"
         title="93.0%"
+      ></div>
+      
+      <div
+        class="bar"
+        style="height: 49px"
+        title="83.0%"
       ></div>
       
     </div>

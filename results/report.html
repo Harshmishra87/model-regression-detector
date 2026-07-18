@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Regression Report — v2</title>
+    <style>
+      body {
+        font-family: -apple-system, sans-serif;
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px;
+        color: #1a1a1a;
+      }
+      .scorecard {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        background: #f5f5f5;
+        margin-bottom: 30px;
+      }
+      .metric {
+        flex: 1;
+      }
+      .metric-label {
+        font-size: 12px;
+        color: #666;
+        text-transform: uppercase;
+      }
+      .metric-value {
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .delta-positive {
+        color: #16a34a;
+      }
+      .delta-negative {
+        color: #dc2626;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      th,
+      td {
+        text-align: left;
+        padding: 10px;
+        border-bottom: 1px solid #e5e5e5;
+        font-size: 14px;
+        vertical-align: top;
+      }
+      th {
+        background: #fafafa;
+      }
+      .meta {
+        color: #666;
+        font-size: 13px;
+        margin-bottom: 20px;
+      }
+      .trend {
+        display: flex;
+        align-items: flex-end;
+        gap: 4px;
+        height: 60px;
+        margin-top: 10px;
+      }
+      .bar {
+        background: #3b82f6;
+        width: 20px;
+        border-radius: 2px 2px 0 0;
+      }
+      .no-regressions {
+        color: #16a34a;
+        padding: 20px;
+        background: #f0fdf4;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Regression Report</h1>
+    <div class="meta">
+      Prompt version: <strong>v2</strong> · Model: gemini-3.1-flash-lite
+      · 20260711T080545Z
+    </div>
+
+    <div class="scorecard">
+      <div class="metric">
+        <div class="metric-label">Previous pass rate</div>
+        <div class="metric-value">
+          92.0%
+        </div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Current pass rate</div>
+        <div class="metric-value">
+          93.0%
+        </div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Delta</div>
+        <div
+          class="metric-value delta-positive"
+        >
+          1.0%
+        </div>
+      </div>
+    </div>
+
+    <h2>Regressed Cases (2)</h2>
+    
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Input</th>
+        <th>Previous Output</th>
+        <th>Current Output</th>
+      </tr>
+      
+      <tr>
+        <td>case_020</td>
+        <td>My bank flagged your charge as fraud and reversed it, but you've suspended my account. How do I resolve this?</td>
+        <td>{'category': 'billing', 'summary': "The customer's account was suspended due to a chargeback caused by a bank-flagged transaction."}</td>
+        <td>{'category': 'account', 'summary': "Customer's account was suspended following a bank-initiated chargeback due to a fraud flag."}</td>
+      </tr>
+      
+      <tr>
+        <td>case_096</td>
+        <td>Do you have a status page where I can check for ongoing outages before I report one?</td>
+        <td>{'category': 'general', 'summary': 'The customer is inquiring about the availability of a status page to check for ongoing service outages.'}</td>
+        <td>{'category': 'technical', 'summary': 'Customer is inquiring about the location of a status page to check for service outages.'}</td>
+      </tr>
+      
+    </table>
+    
+
+    <h2>Pass Rate Trend (last 1 runs)</h2>
+    <div class="trend">
+      
+      <div
+        class="bar"
+        style="height: 55px"
+        title="93.0%"
+      ></div>
+      
+    </div>
+  </body>
+</html>

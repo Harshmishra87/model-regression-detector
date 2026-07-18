@@ -1,0 +1,805 @@
+[
+  {
+    "id": "case_001",
+    "input": "Hi, I was charged $49 twice this month for my Pro plan. Can you refund the extra charge?",
+    "expected_category": "billing",
+    "expected_summary": "Customer was double-charged and wants a refund.",
+    "expected_difficulty": "easy",
+    "notes": "Clear single-category case, baseline sanity check."
+  },
+  {
+    "id": "case_002",
+    "input": "My invoice from June shows a $15 charge I don't recognize. What is this for?",
+    "expected_category": "billing",
+    "expected_summary": "Customer disputes an unrecognized charge on their invoice.",
+    "expected_difficulty": "easy",
+    "notes": "Standard billing dispute."
+  },
+  {
+    "id": "case_003",
+    "input": "I upgraded to the annual plan but I'm still being billed monthly. Please fix this.",
+    "expected_category": "billing",
+    "expected_summary": "Customer's plan upgrade did not update their billing cycle.",
+    "expected_difficulty": "easy",
+    "notes": "Common billing/plan sync issue."
+  },
+  {
+    "id": "case_004",
+    "input": "Can you send me an itemized receipt for last quarter? I need it for expense reporting.",
+    "expected_category": "billing",
+    "expected_summary": "Customer requests an itemized receipt for expense purposes.",
+    "expected_difficulty": "easy",
+    "notes": "Simple documentation request."
+  },
+  {
+    "id": "case_005",
+    "input": "I cancelled my subscription last week but you charged me again yesterday.",
+    "expected_category": "billing",
+    "expected_summary": "Customer was charged after cancelling their subscription.",
+    "expected_difficulty": "easy",
+    "notes": "Common billing failure after cancellation."
+  },
+  {
+    "id": "case_006",
+    "input": "Why did my price go from $20/mo to $35/mo without any notice?",
+    "expected_category": "billing",
+    "expected_summary": "Customer wasn't notified before a price increase.",
+    "expected_difficulty": "easy",
+    "notes": "Pricing transparency complaint."
+  },
+  {
+    "id": "case_007",
+    "input": "My credit card expired and I need to update my payment method before renewal.",
+    "expected_category": "billing",
+    "expected_summary": "Customer needs to update an expired payment method.",
+    "expected_difficulty": "easy",
+    "notes": "Straightforward payment update request."
+  },
+  {
+    "id": "case_008",
+    "input": "I was charged in USD instead of my local currency, can you clarify the conversion rate used?",
+    "expected_category": "billing",
+    "expected_summary": "Customer questions the currency conversion applied to their charge.",
+    "expected_difficulty": "medium",
+    "notes": "Requires understanding of currency-related billing nuance."
+  },
+  {
+    "id": "case_009",
+    "input": "do you offer discounts for students? also can i get a refund for last month if so",
+    "expected_category": "billing",
+    "expected_summary": "Customer asks about student discounts and a retroactive refund.",
+    "expected_difficulty": "medium",
+    "notes": "Two-part billing question in one message."
+  },
+  {
+    "id": "case_010",
+    "input": "I was promised a free trial extension by support chat but I've now been billed. Please honor that promise.",
+    "expected_category": "billing",
+    "expected_summary": "Customer was billed despite a promised free trial extension.",
+    "expected_difficulty": "medium",
+    "notes": "Requires trusting customer's account of a prior verbal agreement."
+  },
+  {
+    "id": "case_011",
+    "input": "your billing system is a joke, charged me 3 times this week, fix ur garbage",
+    "expected_category": "billing",
+    "expected_summary": "Customer is angry about being charged multiple times in one week.",
+    "expected_difficulty": "medium",
+    "notes": "Hostile tone shouldn't affect category classification."
+  },
+  {
+    "id": "case_012",
+    "input": "refund??",
+    "expected_category": "billing",
+    "expected_summary": "Customer is asking about a refund with no further context.",
+    "expected_difficulty": "hard",
+    "notes": "Extremely short, minimal context, tests handling of terse inputs."
+  },
+  {
+    "id": "case_013",
+    "input": "I paid for the yearly plan but my dashboard still shows 'free tier' features only.",
+    "expected_category": "billing",
+    "expected_summary": "Customer's paid plan isn't reflected in their account features.",
+    "expected_difficulty": "hard",
+    "notes": "Overlaps billing (payment) and account (feature access) — tests tie-breaking."
+  },
+  {
+    "id": "case_014",
+    "input": "Got double charged AND my login doesn't work anymore. Can you sort both please?",
+    "expected_category": "billing",
+    "expected_summary": "Customer reports a double charge and a separate login issue.",
+    "expected_difficulty": "hard",
+    "notes": "Multi-issue email spanning billing and technical — tests primary-issue extraction."
+  },
+  {
+    "id": "case_015",
+    "input": "wow great, charged me FULL PRICE the day after telling me I'd get 20% off forever. love that for me",
+    "expected_category": "billing",
+    "expected_summary": "Customer was charged full price despite being promised a permanent discount.",
+    "expected_difficulty": "hard",
+    "notes": "Sarcasm test — model must not be thrown off by tone."
+  },
+  {
+    "id": "case_016",
+    "input": "Does the enterprise plan include a dedicated account manager, and what's the price difference vs Pro?",
+    "expected_category": "billing",
+    "expected_summary": "Customer asks about enterprise plan features and pricing vs Pro tier.",
+    "expected_difficulty": "medium",
+    "notes": "Pre-sales billing question, not a complaint."
+  },
+  {
+    "id": "case_017",
+    "input": "I need an invoice with our company VAT number added for tax purposes.",
+    "expected_category": "billing",
+    "expected_summary": "Customer needs a VAT number added to their invoice.",
+    "expected_difficulty": "easy",
+    "notes": "Business billing documentation request."
+  },
+  {
+    "id": "case_018",
+    "input": "Charged for 5 seats but we only have 3 active users on the team plan.",
+    "expected_category": "billing",
+    "expected_summary": "Customer is billed for more seats than active users.",
+    "expected_difficulty": "medium",
+    "notes": "Seat-based billing discrepancy."
+  },
+  {
+    "id": "case_019",
+    "input": "The coupon code SAVE20 isn't applying at checkout, can you apply it manually and refund the difference?",
+    "expected_category": "billing",
+    "expected_summary": "Customer's coupon code failed at checkout and wants a manual refund.",
+    "expected_difficulty": "medium",
+    "notes": "Promo code + refund combined request."
+  },
+  {
+    "id": "case_020",
+    "input": "My bank flagged your charge as fraud and reversed it, but you've suspended my account. How do I resolve this?",
+    "expected_category": "billing",
+    "expected_summary": "Customer's chargeback led to account suspension and needs resolution.",
+    "expected_difficulty": "hard",
+    "notes": "Billing dispute with account-status consequence — tests category priority."
+  },
+  {
+    "id": "case_021",
+    "input": "Is there a way to pay via bank transfer instead of credit card for our annual contract?",
+    "expected_category": "billing",
+    "expected_summary": "Customer asks about alternative payment methods for their contract.",
+    "expected_difficulty": "easy",
+    "notes": "Payment method inquiry."
+  },
+  {
+    "id": "case_022",
+    "input": "I was auto-renewed for a plan I no longer use. Please refund and cancel.",
+    "expected_category": "billing",
+    "expected_summary": "Customer wants a refund and cancellation after unwanted auto-renewal.",
+    "expected_difficulty": "easy",
+    "notes": "Common auto-renewal complaint."
+  },
+  {
+    "id": "case_023",
+    "input": "billing keeps failing, tried 2 diff cards, both declined but they work everywhere else",
+    "expected_category": "billing",
+    "expected_summary": "Customer's payment method is repeatedly declining despite working elsewhere.",
+    "expected_difficulty": "medium",
+    "notes": "Could be read as technical, but root issue is payment processing."
+  },
+  {
+    "id": "case_024",
+    "input": "Can I get a proforma invoice before my company approves the purchase?",
+    "expected_category": "billing",
+    "expected_summary": "Customer requests a proforma invoice for internal approval.",
+    "expected_difficulty": "easy",
+    "notes": "B2B pre-purchase billing request."
+  },
+  {
+    "id": "case_025",
+    "input": "$0.00 charge appeared on my statement from you guys, is this a test charge or an error?",
+    "expected_category": "billing",
+    "expected_difficulty": "medium",
+    "expected_summary": "Customer questions a $0.00 charge appearing on their statement.",
+    "notes": "Unusual edge case charge amount."
+  },
+
+  {
+    "id": "case_026",
+    "input": "I can't log into my account, it says 'invalid credentials' even though I'm sure my password is right.",
+    "expected_category": "technical",
+    "expected_summary": "Customer cannot log in due to a credentials error.",
+    "expected_difficulty": "easy",
+    "notes": "Standard login issue."
+  },
+  {
+    "id": "case_027",
+    "input": "The app crashes every time I try to upload a file larger than 10MB.",
+    "expected_category": "technical",
+    "expected_summary": "App crashes when uploading files over 10MB.",
+    "expected_difficulty": "easy",
+    "notes": "Clear reproducible bug report."
+  },
+  {
+    "id": "case_028",
+    "input": "Your API has been returning 500 errors for the past hour on the /users endpoint.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports repeated 500 errors on the /users API endpoint.",
+    "expected_difficulty": "easy",
+    "notes": "Developer-facing technical issue."
+  },
+  {
+    "id": "case_029",
+    "input": "Dark mode isn't saving my preference, it resets to light mode every time I refresh.",
+    "expected_category": "technical",
+    "expected_summary": "Dark mode preference doesn't persist across refreshes.",
+    "expected_difficulty": "easy",
+    "notes": "UI bug report."
+  },
+  {
+    "id": "case_030",
+    "input": "I'm getting a blank white screen when I try to open the dashboard on Safari.",
+    "expected_category": "technical",
+    "expected_summary": "Dashboard shows a blank screen specifically on Safari.",
+    "expected_difficulty": "easy",
+    "notes": "Browser-specific rendering bug."
+  },
+  {
+    "id": "case_031",
+    "input": "Two-factor authentication codes never arrive via SMS, I've tried 5 times.",
+    "expected_category": "technical",
+    "expected_summary": "Customer isn't receiving 2FA SMS codes after multiple attempts.",
+    "expected_difficulty": "easy",
+    "notes": "Auth delivery failure."
+  },
+  {
+    "id": "case_032",
+    "input": "The export to CSV button just spins forever and never downloads anything.",
+    "expected_category": "technical",
+    "expected_summary": "CSV export feature hangs and never completes.",
+    "expected_difficulty": "easy",
+    "notes": "Feature malfunction report."
+  },
+  {
+    "id": "case_033",
+    "input": "Getting 'Error 403: Forbidden' when trying to access a folder that used to work fine yesterday.",
+    "expected_category": "technical",
+    "expected_summary": "Customer suddenly gets a 403 error accessing a previously working folder.",
+    "expected_difficulty": "medium",
+    "notes": "Could also be permissions/account related — tests boundary with account category."
+  },
+  {
+    "id": "case_034",
+    "input": "app keeps logging me out every 5 mins on mobile, so annoying",
+    "expected_category": "technical",
+    "expected_summary": "Mobile app repeatedly logs the customer out every few minutes.",
+    "expected_difficulty": "easy",
+    "notes": "Session persistence bug, casual tone."
+  },
+  {
+    "id": "case_035",
+    "input": "webhook payloads are missing the 'timestamp' field since your last deploy, breaking our integration",
+    "expected_category": "technical",
+    "expected_summary": "A recent deploy removed the 'timestamp' field from webhook payloads, breaking integration.",
+    "expected_difficulty": "medium",
+    "notes": "Developer/API regression report, requires domain vocabulary understanding."
+  },
+  {
+    "id": "case_036",
+    "input": "cant login... also why is my bill so high lol",
+    "expected_category": "technical",
+    "expected_summary": "Customer cannot log in and also has a billing question.",
+    "expected_difficulty": "hard",
+    "notes": "Deliberately ambiguous: touches both technical and billing — tests tie-breaking behavior."
+  },
+  {
+    "id": "case_037",
+    "input": "search results are totally wrong now, showing stuff from 2019 as 'most recent'",
+    "expected_category": "technical",
+    "expected_summary": "Search results show outdated content ranked as most recent.",
+    "expected_difficulty": "medium",
+    "notes": "Backend/ranking bug, informal phrasing."
+  },
+  {
+    "id": "case_038",
+    "input": "not working",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports something isn't working, with no further detail.",
+    "expected_difficulty": "hard",
+    "notes": "Minimal-context input; tests default assumption behavior on vague technical complaints."
+  },
+  {
+    "id": "case_039",
+    "input": "Push notifications stopped working after I updated to iOS 18, works fine on my old Android tablet though.",
+    "expected_category": "technical",
+    "expected_summary": "Push notifications broke after an iOS update, unaffected on Android.",
+    "expected_difficulty": "medium",
+    "notes": "Platform-specific bug with comparison detail."
+  },
+  {
+    "id": "case_040",
+    "input": "y'all really shipped a login page that doesn't accept passwords with emojis in them, groundbreaking work truly",
+    "expected_category": "technical",
+    "expected_summary": "Customer sarcastically reports that the login page rejects passwords containing emojis.",
+    "expected_difficulty": "hard",
+    "notes": "Sarcasm test in technical category."
+  },
+  {
+    "id": "case_041",
+    "input": "Integration with Zapier stopped triggering after your API version bump yesterday.",
+    "expected_category": "technical",
+    "expected_summary": "Zapier integration stopped triggering after an API version update.",
+    "expected_difficulty": "medium",
+    "notes": "Third-party integration breakage."
+  },
+  {
+    "id": "case_042",
+    "input": "My uploaded profile picture is showing sideways/rotated on every device.",
+    "expected_category": "technical",
+    "expected_summary": "Profile picture displays rotated incorrectly across devices.",
+    "expected_difficulty": "easy",
+    "notes": "Image orientation bug."
+  },
+  {
+    "id": "case_043",
+    "input": "Getting 'session expired' immediately after logging in, like within 2 seconds.",
+    "expected_category": "technical",
+    "expected_summary": "Session expires almost immediately after successful login.",
+    "expected_difficulty": "easy",
+    "notes": "Session/token bug."
+  },
+  {
+    "id": "case_044",
+    "input": "The mobile app won't even open, just shows the splash screen forever on my Pixel 8.",
+    "expected_category": "technical",
+    "expected_summary": "Mobile app is stuck on the splash screen on a specific device.",
+    "expected_difficulty": "easy",
+    "notes": "App launch failure, device-specific."
+  },
+  {
+    "id": "case_045",
+    "input": "keyboard shortcuts stopped working after the update, ctrl+s used to save now it just does nothing",
+    "expected_category": "technical",
+    "expected_summary": "Keyboard shortcuts, including save, stopped working after an update.",
+    "expected_difficulty": "easy",
+    "notes": "Post-update regression report."
+  },
+  {
+    "id": "case_046",
+    "input": "getting rate limited (429) even though we're well under our documented quota",
+    "expected_category": "technical",
+    "expected_summary": "Customer is being rate-limited despite being under their documented API quota.",
+    "expected_difficulty": "medium",
+    "notes": "API/backend discrepancy, developer audience."
+  },
+  {
+    "id": "case_047",
+    "input": "Video calls freeze after exactly 15 minutes every single time, like clockwork.",
+    "expected_category": "technical",
+    "expected_summary": "Video calls consistently freeze after 15 minutes.",
+    "expected_difficulty": "medium",
+    "notes": "Highly specific reproducible bug pattern."
+  },
+  {
+    "id": "case_048",
+    "input": "site is down???",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports the site appears to be down.",
+    "expected_difficulty": "hard",
+    "notes": "Very short, urgent-sounding, minimal detail."
+  },
+  {
+    "id": "case_049",
+    "input": "None of my saved filters loaded this morning, and now they're just... gone? did something happen on your end",
+    "expected_category": "technical",
+    "expected_summary": "Customer's saved filters disappeared unexpectedly.",
+    "expected_difficulty": "medium",
+    "notes": "Data loss bug report, uncertain tone."
+  },
+  {
+    "id": "case_050",
+    "input": "The 'download all' button downloads a zip file that's corrupted and won't open.",
+    "expected_category": "technical",
+    "expected_summary": "Bulk download feature produces a corrupted zip file.",
+    "expected_difficulty": "easy",
+    "notes": "File integrity bug."
+  },
+
+  {
+    "id": "case_051",
+    "input": "I can't seem to update my email address in account settings, the save button is greyed out.",
+    "expected_category": "account",
+    "expected_summary": "Customer is unable to update their email due to a disabled save button.",
+    "expected_difficulty": "easy",
+    "notes": "Standard account settings issue."
+  },
+  {
+    "id": "case_052",
+    "input": "How do I delete my account permanently and remove all my data?",
+    "expected_category": "account",
+    "expected_summary": "Customer wants to permanently delete their account and data.",
+    "expected_difficulty": "easy",
+    "notes": "Account deletion request."
+  },
+  {
+    "id": "case_053",
+    "input": "I need to transfer ownership of our team workspace to a new admin, how do I do that?",
+    "expected_category": "account",
+    "expected_summary": "Customer wants to transfer workspace ownership to a new admin.",
+    "expected_difficulty": "easy",
+    "notes": "Team/org account management request."
+  },
+  {
+    "id": "case_054",
+    "input": "Can you merge my two accounts, I accidentally signed up twice with different emails.",
+    "expected_category": "account",
+    "expected_summary": "Customer wants to merge two duplicate accounts.",
+    "expected_difficulty": "easy",
+    "notes": "Account consolidation request."
+  },
+  {
+    "id": "case_055",
+    "input": "I forgot the email I used to sign up, how can I recover my account?",
+    "expected_category": "account",
+    "expected_summary": "Customer needs help recovering an account with a forgotten email.",
+    "expected_difficulty": "easy",
+    "notes": "Account recovery request."
+  },
+  {
+    "id": "case_056",
+    "input": "My profile still shows my old last name after I got married and changed it legally.",
+    "expected_category": "account",
+    "expected_summary": "Customer wants to update their legal name on their profile.",
+    "expected_difficulty": "easy",
+    "notes": "Profile info update."
+  },
+  {
+    "id": "case_057",
+    "input": "I want to change my username but it says it's already taken, even though I don't see anyone else using it.",
+    "expected_category": "account",
+    "expected_summary": "Customer can't change their username due to an unexpected 'taken' error.",
+    "expected_difficulty": "medium",
+    "notes": "Could be a bug (technical) but framed as an account settings problem."
+  },
+  {
+    "id": "case_058",
+    "input": "how do i add a team member who doesnt have a company email yet",
+    "expected_category": "account",
+    "expected_summary": "Customer asks how to invite a team member without a company email.",
+    "expected_difficulty": "easy",
+    "notes": "Team management how-to question."
+  },
+  {
+    "id": "case_059",
+    "input": "I paid for the yearly plan but my dashboard still shows 'free tier' features only.",
+    "expected_category": "account",
+    "expected_summary": "Customer's paid plan isn't reflected in their account features.",
+    "expected_difficulty": "hard",
+    "notes": "Duplicate framing of case_013 — overlaps billing and account, tests consistent tie-breaking across dataset."
+  },
+  {
+    "id": "case_060",
+    "input": "my account got suspended and the email just says 'policy violation' with zero detail, what did i even do",
+    "expected_category": "account",
+    "expected_summary": "Customer's account was suspended with no explanation of the violation.",
+    "expected_difficulty": "medium",
+    "notes": "Frustrated tone, account status issue."
+  },
+  {
+    "id": "case_061",
+    "input": "Locked myself out after 5 failed attempts, how long until I can try again or is there a manual unlock?",
+    "expected_category": "account",
+    "expected_summary": "Customer is locked out after failed login attempts and wants an unlock option.",
+    "expected_difficulty": "medium",
+    "notes": "Overlaps with technical (login) but primary need is account access restoration."
+  },
+  {
+    "id": "case_062",
+    "input": "Please remove my phone number from 2FA, I got a new number and lost the old SIM.",
+    "expected_category": "account",
+    "expected_summary": "Customer needs their 2FA phone number removed after losing their old SIM.",
+    "expected_difficulty": "medium",
+    "notes": "Security-sensitive account change request."
+  },
+  {
+    "id": "case_063",
+    "input": "wait why does it say im on the 'basic' plan, i signed up for premium 6 months ago???",
+    "expected_category": "account",
+    "expected_summary": "Customer's account shows the wrong plan tier despite signing up for premium.",
+    "expected_difficulty": "medium",
+    "notes": "Account/plan mismatch, confused tone."
+  },
+  {
+    "id": "case_064",
+    "input": "Can I downgrade my role from admin to regular member on the team account?",
+    "expected_category": "account",
+    "expected_summary": "Customer wants to change their own role from admin to member.",
+    "expected_difficulty": "easy",
+    "notes": "Permissions/role management request."
+  },
+  {
+    "id": "case_065",
+    "input": "I never got the verification email after signing up, checked spam, nothing.",
+    "expected_category": "account",
+    "expected_summary": "Customer never received their account verification email.",
+    "expected_difficulty": "easy",
+    "notes": "Onboarding/verification issue."
+  },
+  {
+    "id": "case_066",
+    "input": "someone else is logged into my account from a country I've never been to, please help immediately",
+    "expected_category": "account",
+    "expected_summary": "Customer suspects unauthorized access to their account from an unfamiliar location.",
+    "expected_difficulty": "medium",
+    "notes": "Security incident, urgent tone."
+  },
+  {
+    "id": "case_067",
+    "input": "Got double charged AND my login doesn't work anymore. Can you sort both please?",
+    "expected_category": "account",
+    "expected_summary": "Customer reports a double charge and a separate login issue.",
+    "expected_difficulty": "hard",
+    "notes": "Duplicate framing of case_014 for account category — tests consistency of tie-breaking across categories."
+  },
+  {
+    "id": "case_068",
+    "input": "how many seats does the team plan include by default",
+    "expected_category": "account",
+    "expected_summary": "Customer asks how many seats are included in the team plan by default.",
+    "expected_difficulty": "medium",
+    "notes": "Could lean billing (plan detail) vs account (team structure) — genuine ambiguity."
+  },
+  {
+    "id": "case_069",
+    "input": "Need to update the billing contact on our account to a different person in finance.",
+    "expected_category": "account",
+    "expected_summary": "Customer wants to change the billing contact associated with their account.",
+    "expected_difficulty": "medium",
+    "notes": "Account-record change, but topic word 'billing' present — tests keyword-vs-intent distinction."
+  },
+  {
+    "id": "case_070",
+    "input": "account",
+    "expected_category": "account",
+    "expected_summary": "Customer sent only the word 'account' with no further context.",
+    "expected_difficulty": "hard",
+    "notes": "Single-word input, near-empty message, tests minimal-context handling."
+  },
+  {
+    "id": "case_071",
+    "input": "I'd like to set up SSO for our organization instead of individual passwords.",
+    "expected_category": "account",
+    "expected_summary": "Customer wants to configure SSO for their organization's account.",
+    "expected_difficulty": "easy",
+    "notes": "Enterprise account configuration request."
+  },
+  {
+    "id": "case_072",
+    "input": "My co-founder left the company, how do I remove them as an admin and revoke their access?",
+    "expected_category": "account",
+    "expected_summary": "Customer wants to remove a former co-founder's admin access.",
+    "expected_difficulty": "easy",
+    "notes": "Access revocation request."
+  },
+  {
+    "id": "case_073",
+    "input": "Can I have two accounts under the same email for personal and work use?",
+    "expected_category": "account",
+    "expected_summary": "Customer asks if one email can be used for two separate accounts.",
+    "expected_difficulty": "easy",
+    "notes": "Account structure question."
+  },
+  {
+    "id": "case_074",
+    "input": "I keep getting a 'this account is under review' banner for 3 days now, is something wrong?",
+    "expected_category": "account",
+    "expected_summary": "Customer's account has shown an 'under review' status for several days.",
+    "expected_difficulty": "medium",
+    "notes": "Account status inquiry, mild concern."
+  },
+  {
+    "id": "case_075",
+    "input": "yo can u just delete everything about me from ur servers, gdpr n all that",
+    "expected_category": "account",
+    "expected_summary": "Customer requests full data deletion citing GDPR rights.",
+    "expected_difficulty": "medium",
+    "notes": "Legal/compliance-flavored account deletion request, casual tone."
+  },
+
+  {
+    "id": "case_076",
+    "input": "What are your support hours? I'm in a different timezone and want to know when someone's available.",
+    "expected_category": "general",
+    "expected_summary": "Customer asks about support availability across timezones.",
+    "expected_difficulty": "easy",
+    "notes": "Simple informational request."
+  },
+  {
+    "id": "case_077",
+    "input": "Do you have a public roadmap for upcoming features?",
+    "expected_category": "general",
+    "expected_summary": "Customer asks whether a public product roadmap exists.",
+    "expected_difficulty": "easy",
+    "notes": "Product information request."
+  },
+  {
+    "id": "case_078",
+    "input": "Just wanted to say the new dashboard redesign looks great, nice work team!",
+    "expected_category": "general",
+    "expected_summary": "Customer compliments the recently redesigned dashboard.",
+    "expected_difficulty": "easy",
+    "notes": "Positive feedback, no action needed."
+  },
+  {
+    "id": "case_079",
+    "input": "Do you have an affiliate or referral program I could join?",
+    "expected_category": "general",
+    "expected_summary": "Customer asks about joining an affiliate or referral program.",
+    "expected_difficulty": "easy",
+    "notes": "Program inquiry, not billing/account/technical."
+  },
+  {
+    "id": "case_080",
+    "input": "Is your platform GDPR and SOC 2 compliant? Need this for our vendor security review.",
+    "expected_category": "general",
+    "expected_summary": "Customer asks about compliance certifications for a vendor review.",
+    "expected_difficulty": "easy",
+    "notes": "Compliance/informational inquiry."
+  },
+  {
+    "id": "case_081",
+    "input": "Can you point me to documentation on how webhooks are structured?",
+    "expected_category": "general",
+    "expected_summary": "Customer requests documentation on webhook structure.",
+    "expected_difficulty": "easy",
+    "notes": "Documentation request, borders on technical but is purely informational."
+  },
+  {
+    "id": "case_082",
+    "input": "Do you have a mobile app or is this web-only?",
+    "expected_category": "general",
+    "expected_summary": "Customer asks whether a mobile app exists.",
+    "expected_difficulty": "easy",
+    "notes": "Basic product capability question."
+  },
+  {
+    "id": "case_083",
+    "input": "I run a YouTube channel about productivity tools, would you be open to a sponsorship or partnership?",
+    "expected_category": "general",
+    "expected_summary": "Customer proposes a sponsorship or partnership opportunity.",
+    "expected_difficulty": "easy",
+    "notes": "Business development inquiry, clearly general."
+  },
+  {
+    "id": "case_084",
+    "input": "just checking in, havent heard back in a while",
+    "expected_category": "general",
+    "expected_summary": "Customer is following up on a previous unspecified inquiry.",
+    "expected_difficulty": "hard",
+    "notes": "No original issue content — tests handling of context-free follow-ups."
+  },
+  {
+    "id": "case_085",
+    "input": "Are you hiring? I love this product and want to work there.",
+    "expected_category": "general",
+    "expected_summary": "Customer asks about job openings at the company.",
+    "expected_difficulty": "easy",
+    "notes": "Unrelated-to-product inquiry, clearly general."
+  },
+  {
+    "id": "case_086",
+    "input": "thx",
+    "expected_category": "general",
+    "expected_summary": "Customer sends a brief thank-you with no other content.",
+    "expected_difficulty": "hard",
+    "notes": "Minimal single-word input, tests handling of non-issue messages."
+  },
+  {
+    "id": "case_087",
+    "input": "Can you translate your terms of service into Portuguese? We're expanding into Brazil.",
+    "expected_category": "general",
+    "expected_summary": "Customer requests a Portuguese translation of the terms of service.",
+    "expected_difficulty": "medium",
+    "notes": "Localization request, not tied to account/billing/technical."
+  },
+  {
+    "id": "case_088",
+    "input": "honestly kind of disappointed with the whole experience lately, not sure what to say",
+    "expected_category": "general",
+    "expected_summary": "Customer expresses general dissatisfaction without specifying an issue.",
+    "expected_difficulty": "hard",
+    "notes": "Vague negative sentiment with no actionable detail — tests over-eager categorization into technical/billing."
+  },
+  {
+    "id": "case_089",
+    "input": "Do you offer onboarding calls for new enterprise customers?",
+    "expected_category": "general",
+    "expected_summary": "Customer asks whether onboarding calls are available for enterprise customers.",
+    "expected_difficulty": "easy",
+    "notes": "Service offering inquiry."
+  },
+  {
+    "id": "case_090",
+    "input": "What's the difference between your product and [competitor]? Trying to decide between the two.",
+    "expected_category": "general",
+    "expected_summary": "Customer asks for a comparison against a competitor product.",
+    "expected_difficulty": "easy",
+    "notes": "Pre-sales comparison question."
+  },
+  {
+    "id": "case_091",
+    "input": "hey",
+    "expected_category": "general",
+    "expected_summary": "Customer sends only a greeting with no further message.",
+    "expected_difficulty": "hard",
+    "notes": "Extreme minimal-input edge case, no actionable content at all."
+  },
+  {
+    "id": "case_092",
+    "input": "Do you sponsor conferences or meetups? We're organizing a dev meetup and looking for sponsors.",
+    "expected_category": "general",
+    "expected_summary": "Customer asks if the company sponsors conferences or meetups.",
+    "expected_difficulty": "easy",
+    "notes": "Sponsorship inquiry."
+  },
+  {
+    "id": "case_093",
+    "input": "Not a complaint, just curious — what tech stack do you use behind the scenes?",
+    "expected_category": "general",
+    "expected_summary": "Customer asks out of curiosity about the company's tech stack.",
+    "expected_difficulty": "easy",
+    "notes": "Explicitly framed as non-issue, curiosity-driven."
+  },
+  {
+    "id": "case_094",
+    "input": "wait is this the right email to reach support or should I use a different one",
+    "expected_category": "general",
+    "expected_summary": "Customer asks whether they're contacting the correct support channel.",
+    "expected_difficulty": "medium",
+    "notes": "Meta-question about support itself, not a product issue."
+  },
+  {
+    "id": "case_095",
+    "input": "Congrats on the recent funding round I saw in the news! Exciting stuff.",
+    "expected_category": "general",
+    "expected_summary": "Customer congratulates the company on a recent funding announcement.",
+    "expected_difficulty": "easy",
+    "notes": "Purely social/congratulatory message."
+  },
+  {
+    "id": "case_096",
+    "input": "Do you have a status page where I can check for ongoing outages before I report one?",
+    "expected_category": "general",
+    "expected_summary": "Customer asks about a public status page for checking outages.",
+    "expected_difficulty": "medium",
+    "notes": "Borders on technical, but is a meta-question about support process, not a bug report."
+  },
+  {
+    "id": "case_097",
+    "input": "no issues, everything's working great this month, just wanted to say thanks for the fast support earlier",
+    "expected_category": "general",
+    "expected_summary": "Customer thanks the team for fast support with no current issue.",
+    "expected_difficulty": "easy",
+    "notes": "Positive feedback, explicitly no issue."
+  },
+  {
+    "id": "case_098",
+    "input": "Do you have a Discord or community forum where users share tips?",
+    "expected_category": "general",
+    "expected_summary": "Customer asks about a community forum or Discord server.",
+    "expected_difficulty": "easy",
+    "notes": "Community/resource inquiry."
+  },
+  {
+    "id": "case_099",
+    "input": "??",
+    "expected_category": "general",
+    "expected_summary": "Customer sends only punctuation with no discernible content or intent.",
+    "expected_difficulty": "hard",
+    "notes": "Near-empty, non-informative input — extreme edge case for graceful handling."
+  },
+  {
+    "id": "case_100",
+    "input": "Following up from our call last week about the partnership proposal, any updates on your end?",
+    "expected_category": "general",
+    "expected_summary": "Customer follows up on a partnership proposal discussed in a prior call.",
+    "expected_difficulty": "medium",
+    "notes": "References external context (a call) not visible in the email itself."
+  }
+]

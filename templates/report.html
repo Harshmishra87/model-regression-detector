@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Regression Report — {{ prompt_version }}</title>
+    <style>
+      body {
+        font-family: -apple-system, sans-serif;
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px;
+        color: #1a1a1a;
+      }
+      .scorecard {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        background: #f5f5f5;
+        margin-bottom: 30px;
+      }
+      .metric {
+        flex: 1;
+      }
+      .metric-label {
+        font-size: 12px;
+        color: #666;
+        text-transform: uppercase;
+      }
+      .metric-value {
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .delta-positive {
+        color: #16a34a;
+      }
+      .delta-negative {
+        color: #dc2626;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      th,
+      td {
+        text-align: left;
+        padding: 10px;
+        border-bottom: 1px solid #e5e5e5;
+        font-size: 14px;
+        vertical-align: top;
+      }
+      th {
+        background: #fafafa;
+      }
+      .meta {
+        color: #666;
+        font-size: 13px;
+        margin-bottom: 20px;
+      }
+      .trend {
+        display: flex;
+        align-items: flex-end;
+        gap: 4px;
+        height: 60px;
+        margin-top: 10px;
+      }
+      .bar {
+        background: #3b82f6;
+        width: 20px;
+        border-radius: 2px 2px 0 0;
+      }
+      .no-regressions {
+        color: #16a34a;
+        padding: 20px;
+        background: #f0fdf4;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Regression Report</h1>
+    <div class="meta">
+      Prompt version: <strong>{{ prompt_version }}</strong> · Model: {{ model }}
+      · {{ timestamp }}
+    </div>
+
+    <div class="scorecard">
+      <div class="metric">
+        <div class="metric-label">Previous pass rate</div>
+        <div class="metric-value">
+          {{ "%.1f"|format(previous_pass_rate * 100) }}%
+        </div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Current pass rate</div>
+        <div class="metric-value">
+          {{ "%.1f"|format(current_pass_rate * 100) }}%
+        </div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Delta</div>
+        <div
+          class="metric-value {{ 'delta-positive' if delta >= 0 else 'delta-negative' }}"
+        >
+          {{ "%.1f"|format(delta * 100) }}%
+        </div>
+      </div>
+    </div>
+
+    <h2>Regressed Cases ({{ regressed_cases|length }})</h2>
+    {% if regressed_cases %}
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Input</th>
+        <th>Previous Output</th>
+        <th>Current Output</th>
+      </tr>
+      {% for case in regressed_cases %}
+      <tr>
+        <td>{{ case.id }}</td>
+        <td>{{ case.input }}</td>
+        <td>{{ case.previous_output }}</td>
+        <td>{{ case.current_output }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% else %}
+    <div class="no-regressions">✅ No regressions in this run.</div>
+    {% endif %}
+
+    <h2>Pass Rate Trend (last {{ history|length }} runs)</h2>
+    <div class="trend">
+      {% for rate in history %}
+      <div
+        class="bar"
+        style="height: {{ (rate * 60)|int }}px"
+        title="{{ '%.1f'|format(rate * 100) }}%"
+      ></div>
+      {% endfor %}
+    </div>
+  </body>
+</html>

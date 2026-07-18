@@ -1,0 +1,702 @@
+[
+  {
+    "id": "case_001",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1749.6671000262722,
+    "error": null
+  },
+  {
+    "id": "case_002",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1332.3266000370495,
+    "error": null
+  },
+  {
+    "id": "case_003",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1260.4292000178248,
+    "error": null
+  },
+  {
+    "id": "case_004",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 856.2614999827929,
+    "error": null
+  },
+  {
+    "id": "case_005",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1059.0893999906257,
+    "error": null
+  },
+  {
+    "id": "case_006",
+    "category_score": 1,
+    "quality_score": 4,
+    "latency_ms": 1626.824699982535,
+    "error": null
+  },
+  {
+    "id": "case_007",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 994.9803000199609,
+    "error": null
+  },
+  {
+    "id": "case_008",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1112.8386999480426,
+    "error": null
+  },
+  {
+    "id": "case_009",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1065.3762000147253,
+    "error": null
+  },
+  {
+    "id": "case_010",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1121.8533999635838,
+    "error": null
+  },
+  {
+    "id": "case_011",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1335.940400022082,
+    "error": null
+  },
+  {
+    "id": "case_012",
+    "category_score": 1,
+    "quality_score": 4,
+    "latency_ms": 1129.7816999722272,
+    "error": null
+  },
+  {
+    "id": "case_013",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 992.3827000311576,
+    "error": null
+  },
+  {
+    "id": "case_014",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 964.8196999914944,
+    "error": null
+  },
+  {
+    "id": "case_015",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 831.5133000141941,
+    "error": null
+  },
+  {
+    "id": "case_016",
+    "category_score": 0,
+    "quality_score": 5,
+    "latency_ms": 1101.1565000517294,
+    "error": null
+  },
+  {
+    "id": "case_017",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1317.1809000195935,
+    "error": null
+  },
+  {
+    "id": "case_018",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 895.6621999968775,
+    "error": null
+  },
+  {
+    "id": "case_019",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 872.8220000048168,
+    "error": null
+  },
+  {
+    "id": "case_020",
+    "category_score": 0,
+    "quality_score": 5,
+    "latency_ms": 1292.5702999928035,
+    "error": null
+  },
+  {
+    "id": "case_021",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1037.0625999639742,
+    "error": null
+  },
+  {
+    "id": "case_022",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 2507.497000042349,
+    "error": null
+  },
+  {
+    "id": "case_023",
+    "category_score": 1,
+    "quality_score": 4,
+    "latency_ms": 809.2920000199229,
+    "error": null
+  },
+  {
+    "id": "case_024",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 909.545700007584,
+    "error": null
+  },
+  {
+    "id": "case_025",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 824.7045999742113,
+    "error": null
+  },
+  {
+    "id": "case_026",
+    "category_score": 0,
+    "quality_score": 5,
+    "latency_ms": 2476.4815000235103,
+    "error": null
+  },
+  {
+    "id": "case_027",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 962.5604000175372,
+    "error": null
+  },
+  {
+    "id": "case_028",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 940.050000033807,
+    "error": null
+  },
+  {
+    "id": "case_029",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 981.2723000068218,
+    "error": null
+  },
+  {
+    "id": "case_030",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1345.9411000367254,
+    "error": null
+  },
+  {
+    "id": "case_031",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 991.0610999795608,
+    "error": null
+  },
+  {
+    "id": "case_032",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1056.7414000397548,
+    "error": null
+  },
+  {
+    "id": "case_033",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1530.4135999758728,
+    "error": null
+  },
+  {
+    "id": "case_034",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1835.7163000036962,
+    "error": null
+  },
+  {
+    "id": "case_035",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 840.936699998565,
+    "error": null
+  },
+  {
+    "id": "case_036",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1182.9512999975123,
+    "error": null
+  },
+  {
+    "id": "case_037",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 926.5490000252612,
+    "error": null
+  },
+  {
+    "id": "case_038",
+    "category_score": 1,
+    "quality_score": 4,
+    "latency_ms": 1104.9820000189357,
+    "error": null
+  },
+  {
+    "id": "case_039",
+    "category_score": 1,
+    "quality_score": 4,
+    "latency_ms": 964.0353000140749,
+    "error": null
+  },
+  {
+    "id": "case_040",
+    "category_score": 1,
+    "quality_score": 4,
+    "latency_ms": 1136.48640003521,
+    "error": null
+  },
+  {
+    "id": "case_041",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1515.935800038278,
+    "error": null
+  },
+  {
+    "id": "case_042",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1069.9432999826968,
+    "error": null
+  },
+  {
+    "id": "case_043",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1035.3566000121646,
+    "error": null
+  },
+  {
+    "id": "case_044",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 796.8741000513546,
+    "error": null
+  },
+  {
+    "id": "case_045",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1160.7957999804057,
+    "error": null
+  },
+  {
+    "id": "case_046",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1860.673500050325,
+    "error": null
+  },
+  {
+    "id": "case_047",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1454.0856999810785,
+    "error": null
+  },
+  {
+    "id": "case_048",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1368.6321999994107,
+    "error": null
+  },
+  {
+    "id": "case_049",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 891.6916000307538,
+    "error": null
+  },
+  {
+    "id": "case_050",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1231.9588999962434,
+    "error": null
+  },
+  {
+    "id": "case_051",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1961.8500000215136,
+    "error": null
+  },
+  {
+    "id": "case_052",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1236.5382999996655,
+    "error": null
+  },
+  {
+    "id": "case_053",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 936.3604999962263,
+    "error": null
+  },
+  {
+    "id": "case_054",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1133.533800020814,
+    "error": null
+  },
+  {
+    "id": "case_055",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 832.1404000162147,
+    "error": null
+  },
+  {
+    "id": "case_056",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1242.9355999920517,
+    "error": null
+  },
+  {
+    "id": "case_057",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 831.2799999839626,
+    "error": null
+  },
+  {
+    "id": "case_058",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 931.9092000368983,
+    "error": null
+  },
+  {
+    "id": "case_059",
+    "category_score": 0,
+    "quality_score": 5,
+    "latency_ms": 2166.659099981189,
+    "error": null
+  },
+  {
+    "id": "case_060",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1550.7483999826945,
+    "error": null
+  },
+  {
+    "id": "case_061",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1470.6640999647789,
+    "error": null
+  },
+  {
+    "id": "case_062",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 808.4753000293858,
+    "error": null
+  },
+  {
+    "id": "case_063",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1439.5024999976158,
+    "error": null
+  },
+  {
+    "id": "case_064",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1552.3780999938026,
+    "error": null
+  },
+  {
+    "id": "case_065",
+    "category_score": 1,
+    "quality_score": 4,
+    "latency_ms": 1131.3516999944113,
+    "error": null
+  },
+  {
+    "id": "case_066",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1031.6147000412457,
+    "error": null
+  },
+  {
+    "id": "case_067",
+    "category_score": 0,
+    "quality_score": 5,
+    "latency_ms": 1555.5826000054367,
+    "error": null
+  },
+  {
+    "id": "case_068",
+    "category_score": 0,
+    "quality_score": 5,
+    "latency_ms": 960.0659999996424,
+    "error": null
+  },
+  {
+    "id": "case_069",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1924.2574000381865,
+    "error": null
+  },
+  {
+    "id": "case_070",
+    "category_score": 1,
+    "quality_score": 2,
+    "latency_ms": 1132.7553000301123,
+    "error": null
+  },
+  {
+    "id": "case_071",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1137.5529000069946,
+    "error": null
+  },
+  {
+    "id": "case_072",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 861.7063999990933,
+    "error": null
+  },
+  {
+    "id": "case_073",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1003.3292999723926,
+    "error": null
+  },
+  {
+    "id": "case_074",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1947.4229000043124,
+    "error": null
+  },
+  {
+    "id": "case_075",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 2539.833099988755,
+    "error": null
+  },
+  {
+    "id": "case_076",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1371.6292000026442,
+    "error": null
+  },
+  {
+    "id": "case_077",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1137.0746999746189,
+    "error": null
+  },
+  {
+    "id": "case_078",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1033.5603999556042,
+    "error": null
+  },
+  {
+    "id": "case_079",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1791.8204999878071,
+    "error": null
+  },
+  {
+    "id": "case_080",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 2529.7091000247747,
+    "error": null
+  },
+  {
+    "id": "case_081",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 771.088499983307,
+    "error": null
+  },
+  {
+    "id": "case_082",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 787.2862999793142,
+    "error": null
+  },
+  {
+    "id": "case_083",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1010.8299999847077,
+    "error": null
+  },
+  {
+    "id": "case_084",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1570.012099982705,
+    "error": null
+  },
+  {
+    "id": "case_085",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1545.031799993012,
+    "error": null
+  },
+  {
+    "id": "case_086",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 828.5016000154428,
+    "error": null
+  },
+  {
+    "id": "case_087",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1752.10280000465,
+    "error": null
+  },
+  {
+    "id": "case_088",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 730.7770999614149,
+    "error": null
+  },
+  {
+    "id": "case_089",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1848.631100030616,
+    "error": null
+  },
+  {
+    "id": "case_090",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 820.7234999863431,
+    "error": null
+  },
+  {
+    "id": "case_091",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 938.7622000067495,
+    "error": null
+  },
+  {
+    "id": "case_092",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 934.8143000388518,
+    "error": null
+  },
+  {
+    "id": "case_093",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1048.3849000302143,
+    "error": null
+  },
+  {
+    "id": "case_094",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1129.2459000251256,
+    "error": null
+  },
+  {
+    "id": "case_095",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1030.0243999809027,
+    "error": null
+  },
+  {
+    "id": "case_096",
+    "category_score": 0,
+    "quality_score": 5,
+    "latency_ms": 937.4214999843389,
+    "error": null
+  },
+  {
+    "id": "case_097",
+    "category_score": 1,
+    "quality_score": 4,
+    "latency_ms": 1570.5849999794737,
+    "error": null
+  },
+  {
+    "id": "case_098",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1122.8651000419632,
+    "error": null
+  },
+  {
+    "id": "case_099",
+    "category_score": 1,
+    "quality_score": 4,
+    "latency_ms": 933.8051999802701,
+    "error": null
+  },
+  {
+    "id": "case_100",
+    "category_score": 1,
+    "quality_score": 5,
+    "latency_ms": 1273.1166000012308,
+    "error": null
+  }
+]

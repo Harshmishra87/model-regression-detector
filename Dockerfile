@@ -9,5 +9,6 @@ COPY src/ src/
 COPY prompts/ prompts/
 COPY data/ data/
 COPY templates/ templates/
+RUN mkdir -p results
 
 CMD ["python", "-m", "src.main"]

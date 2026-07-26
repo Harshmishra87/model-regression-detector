@@ -82,7 +82,7 @@
     <h1>Regression Report</h1>
     <div class="meta">
       Prompt version: <strong>v1</strong> · Model: gemini-3.1-flash-lite
-      · 20260718T110643Z
+      · 20260726T121758Z
     </div>
 
     <div class="scorecard">
@@ -121,76 +121,82 @@
       <tr>
         <td>case_013</td>
         <td>I paid for the yearly plan but my dashboard still shows 'free tier' features only.</td>
-        <td>{'category': 'billing', 'summary': "The customer's dashboard does not reflect their paid yearly subscription status."}</td>
-        <td>{'category': 'technical', 'summary': "The user's account dashboard is not reflecting the yearly subscription upgrade and is still limited to free tier features."}</td>
+        <td>{'category': 'billing', 'summary': 'The user is reporting that their account has not been upgraded to the yearly plan despite payment being processed.'}</td>
+        <td>{'category': 'technical', 'summary': "The user's account is not reflecting their paid yearly subscription status on the dashboard."}</td>
       </tr>
       
       <tr>
         <td>case_021</td>
         <td>Is there a way to pay via bank transfer instead of credit card for our annual contract?</td>
-        <td>{'category': 'billing', 'summary': 'Customer is requesting to switch their payment method from credit card to bank transfer for an annual contract.'}</td>
+        <td>{'category': 'billing', 'summary': 'The customer is inquiring about alternative payment methods, specifically bank transfer, for their annual contract.'}</td>
         <td>{'category': 'general', 'summary': 'The customer is inquiring about alternative payment methods for an annual contract.'}</td>
       </tr>
       
       <tr>
         <td>case_053</td>
         <td>I need to transfer ownership of our team workspace to a new admin, how do I do that?</td>
-        <td>{'category': 'account', 'summary': 'The customer is asking for instructions on how to transfer ownership of their team workspace to a new administrator.'}</td>
-        <td>{'category': 'general', 'summary': 'The customer is asking for instructions on how to transfer ownership of their team workspace to a new administrator.'}</td>
+        <td>{'category': 'account', 'summary': 'The user is requesting instructions on how to transfer workspace ownership to a new administrator.'}</td>
+        <td>{'category': 'general', 'summary': 'The user is inquiring about the procedure to transfer ownership of a team workspace.'}</td>
       </tr>
       
       <tr>
         <td>case_058</td>
         <td>how do i add a team member who doesnt have a company email yet</td>
-        <td>{'category': 'account', 'summary': 'Customer needs instructions on adding a team member who lacks a company email address.'}</td>
-        <td>{'category': 'general', 'summary': 'The customer is asking for instructions on how to add a team member without a company email address.'}</td>
+        <td>{'category': 'account', 'summary': 'The user is inquiring about the process for adding a team member who lacks a company email address.'}</td>
+        <td>{'category': 'general', 'summary': 'The customer is asking for instructions on how to add a team member who lacks a company email address.'}</td>
       </tr>
       
       <tr>
         <td>case_063</td>
         <td>wait why does it say im on the 'basic' plan, i signed up for premium 6 months ago???</td>
-        <td>{'category': 'account', 'summary': 'Customer is reporting an issue where their account plan is incorrectly listed as basic instead of the premium plan they purchased.'}</td>
-        <td>{'category': 'billing', 'summary': 'The customer is reporting a discrepancy between their current billing plan and the premium plan they believe they purchased.'}</td>
+        <td>{'category': 'account', 'summary': 'Customer is reporting a discrepancy between their subscribed premium plan and the basic plan currently displayed on their account.'}</td>
+        <td>{'category': 'billing', 'summary': 'The customer is reporting a discrepancy between their paid premium subscription and the current basic plan status reflected on their account.'}</td>
       </tr>
       
       <tr>
         <td>case_064</td>
         <td>Can I downgrade my role from admin to regular member on the team account?</td>
-        <td>{'category': 'account', 'summary': 'The customer is requesting to change their account permissions from admin to regular member.'}</td>
-        <td>{'category': 'general', 'summary': 'The user is inquiring about the process for changing their user role from admin to regular member.'}</td>
+        <td>{'category': 'account', 'summary': 'The user is requesting to change their user role from admin to regular member on their team account.'}</td>
+        <td>{'category': 'general', 'summary': 'The user is inquiring about the process for downgrading their account role from admin to member.'}</td>
       </tr>
       
       <tr>
         <td>case_069</td>
         <td>Need to update the billing contact on our account to a different person in finance.</td>
-        <td>{'category': 'account', 'summary': 'Customer needs to update the designated billing contact person on their account.'}</td>
-        <td>{'category': 'billing', 'summary': 'The customer wants to update the billing contact information for their account.'}</td>
+        <td>{'category': 'account', 'summary': 'The customer needs to update the primary billing contact information for their account.'}</td>
+        <td>{'category': 'billing', 'summary': 'The user needs to update the primary billing contact for their account.'}</td>
       </tr>
       
       <tr>
         <td>case_073</td>
         <td>Can I have two accounts under the same email for personal and work use?</td>
-        <td>{'category': 'account', 'summary': 'Customer is inquiring about the possibility of having multiple accounts linked to a single email address for different purposes.'}</td>
-        <td>{'category': 'general', 'summary': 'The user is inquiring about the possibility of creating multiple accounts using a single email address for different purposes.'}</td>
+        <td>{'category': 'account', 'summary': 'The customer is inquiring about the possibility of using the same email address for both personal and work accounts.'}</td>
+        <td>{'category': 'general', 'summary': 'The customer is asking about the possibility of having multiple accounts registered to a single email address.'}</td>
       </tr>
       
       <tr>
         <td>case_074</td>
         <td>I keep getting a 'this account is under review' banner for 3 days now, is something wrong?</td>
-        <td>{'category': 'account', 'summary': "The user is unable to access their account due to a persistent 'under review' status."}</td>
-        <td>{'category': 'technical', 'summary': "The user is unable to access their account due to a persistent 'under review' error message for the past three days."}</td>
+        <td>{'category': 'account', 'summary': 'The user is unable to access their account due to a persistent review banner.'}</td>
+        <td>{'category': 'technical', 'summary': 'The user is unable to access their account due to a persistent account review banner that has lasted for three days.'}</td>
       </tr>
       
     </table>
     
 
-    <h2>Pass Rate Trend (last 2 runs)</h2>
+    <h2>Pass Rate Trend (last 3 runs)</h2>
     <div class="trend">
       
       <div
         class="bar"
         style="height: 55px"
         title="93.0%"
+      ></div>
+      
+      <div
+        class="bar"
+        style="height: 49px"
+        title="83.0%"
       ></div>
       
       <div

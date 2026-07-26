@@ -5,11 +5,17 @@ on:
     paths:
       - "prompts/**"
 
+permissions:
+  contents: write
+
 jobs:
   evaluate:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
 
       - uses: actions/setup-python@v5
         with:
@@ -19,7 +25,7 @@ jobs:
 
       - run: python src/validate_dataset.py
 
-      - run: python src/main.py
+      - run: python -m src.main
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
@@ -31,3 +37,12 @@ jobs:
         with:
           name: eval-report
           path: results/report.html
+
+      - name: Commit updated eval state back to branch
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add results/latest.json results/scored_latest.json results/history.json results/report.html
+          git diff --staged --quiet || git commit -m "chore: update eval baseline [skip ci]"
+          git push

@@ -1,0 +1,908 @@
+{
+  "timestamp": "20260710T190832Z",
+  "prompt_version": "v1",
+  "model": "gemini-3.1-flash-lite",
+  "dataset_path": "data/golden_dataset.json",
+  "results": [
+    {
+      "id": "case_001",
+      "output": {
+        "category": "billing",
+        "summary": "The customer is requesting a refund for a duplicate charge on their Pro plan subscription."
+      },
+      "latency_ms": 1185.5406999820843,
+      "error": null
+    },
+    {
+      "id": "case_002",
+      "output": {
+        "category": "billing",
+        "summary": "Customer is requesting clarification for an unrecognized $15 charge on their June invoice."
+      },
+      "latency_ms": 726.4361000270583,
+      "error": null
+    },
+    {
+      "id": "case_003",
+      "output": {
+        "category": "billing",
+        "summary": "Customer is being billed monthly despite upgrading to an annual subscription plan."
+      },
+      "latency_ms": 1336.582499963697,
+      "error": null
+    },
+    {
+      "id": "case_004",
+      "output": {
+        "category": "billing",
+        "summary": "Customer is requesting an itemized receipt for the previous quarter for expense reporting purposes."
+      },
+      "latency_ms": 935.8866999973543,
+      "error": null
+    },
+    {
+      "id": "case_005",
+      "output": {
+        "category": "billing",
+        "summary": "The customer was charged for a subscription despite having cancelled it last week."
+      },
+      "latency_ms": 677.9721000348218,
+      "error": null
+    },
+    {
+      "id": "case_006",
+      "output": {
+        "category": "billing",
+        "summary": "The customer is inquiring about an unexpected price increase on their subscription."
+      },
+      "latency_ms": 1491.196199960541,
+      "error": null
+    },
+    {
+      "id": "case_007",
+      "output": {
+        "category": "billing",
+        "summary": "The customer needs to update their expired payment method for their upcoming subscription renewal."
+      },
+      "latency_ms": 1241.8725999887101,
+      "error": null
+    },
+    {
+      "id": "case_008",
+      "output": {
+        "category": "billing",
+        "summary": "The customer is inquiring about the currency conversion rate applied to their subscription charge."
+      },
+      "latency_ms": 1064.087799983099,
+      "error": null
+    },
+    {
+      "id": "case_009",
+      "output": {
+        "category": "billing",
+        "summary": "The customer is inquiring about student discounts and requesting a refund for the previous month's subscription."
+      },
+      "latency_ms": 1625.5446000141092,
+      "error": null
+    },
+    {
+      "id": "case_010",
+      "output": {
+        "category": "billing",
+        "summary": "The customer was charged despite a promised free trial extension from support."
+      },
+      "latency_ms": 1179.440899984911,
+      "error": null
+    },
+    {
+      "id": "case_011",
+      "output": {
+        "category": "billing",
+        "summary": "Customer reports being charged three times this week due to an error in the billing system."
+      },
+      "latency_ms": 879.4170000473969,
+      "error": null
+    },
+    {
+      "id": "case_012",
+      "output": {
+        "category": "billing",
+        "summary": "The customer is requesting a refund for a previous transaction."
+      },
+      "latency_ms": 1246.8975000083447,
+      "error": null
+    },
+    {
+      "id": "case_013",
+      "output": {
+        "category": "billing",
+        "summary": "The user is reporting that their account has not been upgraded to the yearly plan despite payment being processed."
+      },
+      "latency_ms": 1714.7389000165276,
+      "error": null
+    },
+    {
+      "id": "case_014",
+      "output": {
+        "category": "billing",
+        "summary": "The customer reported a double charge on their subscription and is unable to log into their account."
+      },
+      "latency_ms": 1684.8246000008658,
+      "error": null
+    },
+    {
+      "id": "case_015",
+      "output": {
+        "category": "billing",
+        "summary": "The customer was charged full price despite being promised a recurring twenty percent discount."
+      },
+      "latency_ms": 1344.8951999889687,
+      "error": null
+    },
+    {
+      "id": "case_016",
+      "output": {
+        "category": "general",
+        "summary": "Customer is requesting information regarding the features and pricing of the enterprise plan compared to the pro plan."
+      },
+      "latency_ms": 745.3291999991052,
+      "error": null
+    },
+    {
+      "id": "case_017",
+      "output": {
+        "category": "billing",
+        "summary": "Customer is requesting an invoice update to include their company VAT number."
+      },
+      "latency_ms": 1700.4477000446059,
+      "error": null
+    },
+    {
+      "id": "case_018",
+      "output": {
+        "category": "billing",
+        "summary": "The customer is being overcharged for five seats when only three users are active on their team plan."
+      },
+      "latency_ms": 803.3173999865539,
+      "error": null
+    },
+    {
+      "id": "case_019",
+      "output": {
+        "category": "billing",
+        "summary": "The customer is requesting a manual application of a discount code and a refund for a price difference."
+      },
+      "latency_ms": 1081.5352000063285,
+      "error": null
+    },
+    {
+      "id": "case_020",
+      "output": {
+        "category": "billing",
+        "summary": "The customer's account was suspended due to a chargeback caused by a bank-flagged transaction."
+      },
+      "latency_ms": 938.3967000176199,
+      "error": null
+    },
+    {
+      "id": "case_021",
+      "output": {
+        "category": "billing",
+        "summary": "The customer is inquiring about alternative payment methods, specifically bank transfer, for their annual contract."
+      },
+      "latency_ms": 1232.1576999966055,
+      "error": null
+    },
+    {
+      "id": "case_022",
+      "output": {
+        "category": "billing",
+        "summary": "The customer is requesting a refund and cancellation for an unwanted auto-renewed subscription."
+      },
+      "latency_ms": 1541.7042000335641,
+      "error": null
+    },
+    {
+      "id": "case_023",
+      "output": {
+        "category": "billing",
+        "summary": "The customer is experiencing recurring payment failures despite using multiple valid credit cards."
+      },
+      "latency_ms": 1189.653699984774,
+      "error": null
+    },
+    {
+      "id": "case_024",
+      "output": {
+        "category": "billing",
+        "summary": "Customer is requesting a proforma invoice for their purchase approval process."
+      },
+      "latency_ms": 1069.2365000140853,
+      "error": null
+    },
+    {
+      "id": "case_025",
+      "output": {
+        "category": "billing",
+        "summary": "The customer is inquiring about a zero-dollar transaction on their statement."
+      },
+      "latency_ms": 955.6422000168823,
+      "error": null
+    },
+    {
+      "id": "case_026",
+      "output": {
+        "category": "account",
+        "summary": "The user is unable to log in due to an invalid credentials error."
+      },
+      "latency_ms": 1132.6208999962546,
+      "error": null
+    },
+    {
+      "id": "case_027",
+      "output": {
+        "category": "technical",
+        "summary": "The application crashes consistently when attempting to upload files exceeding 10MB."
+      },
+      "latency_ms": 1831.536200013943,
+      "error": null
+    },
+    {
+      "id": "case_028",
+      "output": {
+        "category": "technical",
+        "summary": "The /users API endpoint has been consistently returning 500 errors for the past hour."
+      },
+      "latency_ms": 936.2477000104263,
+      "error": null
+    },
+    {
+      "id": "case_029",
+      "output": {
+        "category": "technical",
+        "summary": "The dark mode setting does not persist across page refreshes and defaults back to light mode."
+      },
+      "latency_ms": 1070.8531999844126,
+      "error": null
+    },
+    {
+      "id": "case_030",
+      "output": {
+        "category": "technical",
+        "summary": "The dashboard displays a blank white screen when accessed via Safari."
+      },
+      "latency_ms": 945.0183999724686,
+      "error": null
+    },
+    {
+      "id": "case_031",
+      "output": {
+        "category": "technical",
+        "summary": "The customer is unable to receive two-factor authentication codes via SMS despite multiple attempts."
+      },
+      "latency_ms": 1395.5298000364564,
+      "error": null
+    },
+    {
+      "id": "case_032",
+      "output": {
+        "category": "technical",
+        "summary": "The CSV export feature is unresponsive and fails to download files."
+      },
+      "latency_ms": 832.5315999682061,
+      "error": null
+    },
+    {
+      "id": "case_033",
+      "output": {
+        "category": "technical",
+        "summary": "The user is encountering a 403 Forbidden error when attempting to access a folder that was previously accessible."
+      },
+      "latency_ms": 2465.1713999919593,
+      "error": null
+    },
+    {
+      "id": "case_034",
+      "output": {
+        "category": "technical",
+        "summary": "The mobile app is frequently logging the user out every five minutes."
+      },
+      "latency_ms": 1051.1955000110902,
+      "error": null
+    },
+    {
+      "id": "case_035",
+      "output": {
+        "category": "technical",
+        "summary": "The webhook payload is missing the timestamp field following the most recent deployment, causing integration issues."
+      },
+      "latency_ms": 1022.5283000036143,
+      "error": null
+    },
+    {
+      "id": "case_036",
+      "output": {
+        "category": "billing",
+        "summary": "The customer is unable to access their account and is also questioning the amount of their latest invoice."
+      },
+      "latency_ms": 1034.3059999868274,
+      "error": null
+    },
+    {
+      "id": "case_037",
+      "output": {
+        "category": "technical",
+        "summary": "The search function is returning outdated results instead of the most recent content."
+      },
+      "latency_ms": 1033.0063999863341,
+      "error": null
+    },
+    {
+      "id": "case_038",
+      "output": {
+        "category": "technical",
+        "summary": "The user is reporting that a service or feature is not functioning correctly."
+      },
+      "latency_ms": 1021.0326000233181,
+      "error": null
+    },
+    {
+      "id": "case_039",
+      "output": {
+        "category": "technical",
+        "summary": "Push notifications are failing on iOS 18 following a recent update."
+      },
+      "latency_ms": 1237.3385000391863,
+      "error": null
+    },
+    {
+      "id": "case_040",
+      "output": {
+        "category": "technical",
+        "summary": "The login page does not support passwords containing emojis."
+      },
+      "latency_ms": 1855.187900015153,
+      "error": null
+    },
+    {
+      "id": "case_041",
+      "output": {
+        "category": "technical",
+        "summary": "Zapier integration stopped working following an API version update."
+      },
+      "latency_ms": 1244.952299981378,
+      "error": null
+    },
+    {
+      "id": "case_042",
+      "output": {
+        "category": "technical",
+        "summary": "The user's profile picture is appearing rotated incorrectly on all devices."
+      },
+      "latency_ms": 1015.9850000054576,
+      "error": null
+    },
+    {
+      "id": "case_043",
+      "output": {
+        "category": "technical",
+        "summary": "The user is experiencing an immediate session expiration error upon logging into their account."
+      },
+      "latency_ms": 859.3158000148833,
+      "error": null
+    },
+    {
+      "id": "case_044",
+      "output": {
+        "category": "technical",
+        "summary": "The mobile app is crashing on startup for a Pixel 8 device."
+      },
+      "latency_ms": 2165.413900045678,
+      "error": null
+    },
+    {
+      "id": "case_045",
+      "output": {
+        "category": "technical",
+        "summary": "Keyboard shortcuts, specifically ctrl+s, are no longer functioning following a recent software update."
+      },
+      "latency_ms": 2147.3113000392914,
+      "error": null
+    },
+    {
+      "id": "case_046",
+      "output": {
+        "category": "technical",
+        "summary": "The customer is receiving unexpected 429 rate limit errors while staying within their documented usage quota."
+      },
+      "latency_ms": 1032.085000013467,
+      "error": null
+    },
+    {
+      "id": "case_047",
+      "output": {
+        "category": "technical",
+        "summary": "Video calls consistently freeze after 15 minutes of use."
+      },
+      "latency_ms": 1142.9970000172034,
+      "error": null
+    },
+    {
+      "id": "case_048",
+      "output": {
+        "category": "technical",
+        "summary": "The user is reporting that the website is currently inaccessible."
+      },
+      "latency_ms": 1929.6169999870472,
+      "error": null
+    },
+    {
+      "id": "case_049",
+      "output": {
+        "category": "technical",
+        "summary": "The user is reporting that their saved filters have disappeared and are failing to load."
+      },
+      "latency_ms": 1766.3728999905288,
+      "error": null
+    },
+    {
+      "id": "case_050",
+      "output": {
+        "category": "technical",
+        "summary": "The download all feature is providing a corrupted zip file."
+      },
+      "latency_ms": 2298.8490000134334,
+      "error": null
+    },
+    {
+      "id": "case_051",
+      "output": {
+        "category": "technical",
+        "summary": "The user is unable to update their email address because the save button is disabled."
+      },
+      "latency_ms": 1894.0419999998994,
+      "error": null
+    },
+    {
+      "id": "case_052",
+      "output": {
+        "category": "account",
+        "summary": "The user is requesting instructions on how to permanently delete their account and personal data."
+      },
+      "latency_ms": 817.9369000135921,
+      "error": null
+    },
+    {
+      "id": "case_053",
+      "output": {
+        "category": "account",
+        "summary": "The user is requesting instructions on how to transfer workspace ownership to a new administrator."
+      },
+      "latency_ms": 975.1516000251286,
+      "error": null
+    },
+    {
+      "id": "case_054",
+      "output": {
+        "category": "account",
+        "summary": "The customer is requesting to merge two separate accounts created with different email addresses."
+      },
+      "latency_ms": 897.7970000123605,
+      "error": null
+    },
+    {
+      "id": "case_055",
+      "output": {
+        "category": "account",
+        "summary": "The customer is unable to recover their account because they have forgotten the associated email address."
+      },
+      "latency_ms": 1110.2376999915577,
+      "error": null
+    },
+    {
+      "id": "case_056",
+      "output": {
+        "category": "account",
+        "summary": "The user is unable to update their last name on their account profile after a legal change."
+      },
+      "latency_ms": 1056.8492999882437,
+      "error": null
+    },
+    {
+      "id": "case_057",
+      "output": {
+        "category": "account",
+        "summary": "The user is unable to change their username because the system claims it is taken."
+      },
+      "latency_ms": 990.2445999905467,
+      "error": null
+    },
+    {
+      "id": "case_058",
+      "output": {
+        "category": "account",
+        "summary": "The user is inquiring about the process for adding a team member who lacks a company email address."
+      },
+      "latency_ms": 663.1761999451555,
+      "error": null
+    },
+    {
+      "id": "case_059",
+      "output": {
+        "category": "billing",
+        "summary": "The customer's account has not been updated to reflect the purchased yearly plan subscription."
+      },
+      "latency_ms": 928.5902999690734,
+      "error": null
+    },
+    {
+      "id": "case_060",
+      "output": {
+        "category": "account",
+        "summary": "The customer is requesting clarification regarding an account suspension due to an unspecified policy violation."
+      },
+      "latency_ms": 1355.1444999757223,
+      "error": null
+    },
+    {
+      "id": "case_061",
+      "output": {
+        "category": "account",
+        "summary": "The user is seeking assistance with unlocking their account after multiple failed login attempts."
+      },
+      "latency_ms": 927.6939999544993,
+      "error": null
+    },
+    {
+      "id": "case_062",
+      "output": {
+        "category": "account",
+        "summary": "The customer needs to update their two-factor authentication phone number due to a lost SIM."
+      },
+      "latency_ms": 1060.8520000241697,
+      "error": null
+    },
+    {
+      "id": "case_063",
+      "output": {
+        "category": "account",
+        "summary": "Customer is reporting a discrepancy between their subscribed premium plan and the basic plan currently displayed on their account."
+      },
+      "latency_ms": 1416.3218999747187,
+      "error": null
+    },
+    {
+      "id": "case_064",
+      "output": {
+        "category": "account",
+        "summary": "The user is requesting to change their user role from admin to regular member on their team account."
+      },
+      "latency_ms": 1036.7632000125013,
+      "error": null
+    },
+    {
+      "id": "case_065",
+      "output": {
+        "category": "account",
+        "summary": "The user did not receive the account verification email despite checking their spam folder."
+      },
+      "latency_ms": 662.1007999638095,
+      "error": null
+    },
+    {
+      "id": "case_066",
+      "output": {
+        "category": "account",
+        "summary": "The user is reporting unauthorized account access from an unknown location."
+      },
+      "latency_ms": 694.5613999851048,
+      "error": null
+    },
+    {
+      "id": "case_067",
+      "output": {
+        "category": "billing",
+        "summary": "The customer is reporting a double charge on their subscription and an inability to log into their account."
+      },
+      "latency_ms": 968.7843999709003,
+      "error": null
+    },
+    {
+      "id": "case_068",
+      "output": {
+        "category": "general",
+        "summary": "The customer is inquiring about the default number of seats included in the team plan."
+      },
+      "latency_ms": 1728.0518000479788,
+      "error": null
+    },
+    {
+      "id": "case_069",
+      "output": {
+        "category": "account",
+        "summary": "The customer needs to update the primary billing contact information for their account."
+      },
+      "latency_ms": 1944.2037000553682,
+      "error": null
+    },
+    {
+      "id": "case_070",
+      "output": {
+        "category": "account",
+        "summary": "The user is requesting assistance related to their account status or access."
+      },
+      "latency_ms": 1236.892499960959,
+      "error": null
+    },
+    {
+      "id": "case_071",
+      "output": {
+        "category": "technical",
+        "summary": "Customer is requesting assistance with setting up Single Sign-On (SSO) for their organization."
+      },
+      "latency_ms": 1021.3921000249684,
+      "error": null
+    },
+    {
+      "id": "case_072",
+      "output": {
+        "category": "account",
+        "summary": "The user needs assistance with removing an admin and revoking access for a departing co-founder."
+      },
+      "latency_ms": 831.5749999601394,
+      "error": null
+    },
+    {
+      "id": "case_073",
+      "output": {
+        "category": "account",
+        "summary": "The customer is inquiring about the possibility of using the same email address for both personal and work accounts."
+      },
+      "latency_ms": 1861.7018000222743,
+      "error": null
+    },
+    {
+      "id": "case_074",
+      "output": {
+        "category": "account",
+        "summary": "The user is unable to access their account due to a persistent review banner."
+      },
+      "latency_ms": 3673.2032999861985,
+      "error": null
+    },
+    {
+      "id": "case_075",
+      "output": {
+        "category": "account",
+        "summary": "Customer is requesting the permanent deletion of their personal data in accordance with GDPR."
+      },
+      "latency_ms": 1764.780499972403,
+      "error": null
+    },
+    {
+      "id": "case_076",
+      "output": {
+        "category": "general",
+        "summary": "The customer is inquiring about the support team's availability and operating hours."
+      },
+      "latency_ms": 1548.72439999599,
+      "error": null
+    },
+    {
+      "id": "case_077",
+      "output": {
+        "category": "general",
+        "summary": "Customer is inquiring about the availability of a public product roadmap."
+      },
+      "latency_ms": 1195.619700010866,
+      "error": null
+    },
+    {
+      "id": "case_078",
+      "output": {
+        "category": "general",
+        "summary": "The customer is providing positive feedback regarding the new dashboard redesign."
+      },
+      "latency_ms": 1229.0407000109553,
+      "error": null
+    },
+    {
+      "id": "case_079",
+      "output": {
+        "category": "general",
+        "summary": "Customer is inquiring about the availability of an affiliate or referral program."
+      },
+      "latency_ms": 913.5840999661013,
+      "error": null
+    },
+    {
+      "id": "case_080",
+      "output": {
+        "category": "general",
+        "summary": "The customer is inquiring about the platform's GDPR and SOC 2 compliance for a vendor security review."
+      },
+      "latency_ms": 723.2263999758288,
+      "error": null
+    },
+    {
+      "id": "case_081",
+      "output": {
+        "category": "general",
+        "summary": "The user is requesting documentation on the structure of webhooks."
+      },
+      "latency_ms": 710.2890000096522,
+      "error": null
+    },
+    {
+      "id": "case_082",
+      "output": {
+        "category": "general",
+        "summary": "Customer is inquiring about the availability of a mobile application."
+      },
+      "latency_ms": 683.4666999639012,
+      "error": null
+    },
+    {
+      "id": "case_083",
+      "output": {
+        "category": "general",
+        "summary": "The user is inquiring about a potential sponsorship or partnership opportunity for their YouTube channel."
+      },
+      "latency_ms": 639.6439999807626,
+      "error": null
+    },
+    {
+      "id": "case_084",
+      "output": {
+        "category": "general",
+        "summary": "The customer is following up on a previous, unanswered inquiry."
+      },
+      "latency_ms": 693.7166000134312,
+      "error": null
+    },
+    {
+      "id": "case_085",
+      "output": {
+        "category": "general",
+        "summary": "The customer is inquiring about potential job openings."
+      },
+      "latency_ms": 824.4604999781586,
+      "error": null
+    },
+    {
+      "id": "case_086",
+      "output": {
+        "category": "general",
+        "summary": "The customer is acknowledging a previous response."
+      },
+      "latency_ms": 717.1233000117354,
+      "error": null
+    },
+    {
+      "id": "case_087",
+      "output": {
+        "category": "general",
+        "summary": "The customer is requesting a Portuguese translation of the terms of service for their expansion into Brazil."
+      },
+      "latency_ms": 842.5920000299811,
+      "error": null
+    },
+    {
+      "id": "case_088",
+      "output": {
+        "category": "general",
+        "summary": "The customer expressed dissatisfaction with their overall experience without citing a specific issue."
+      },
+      "latency_ms": 789.073699968867,
+      "error": null
+    },
+    {
+      "id": "case_089",
+      "output": {
+        "category": "general",
+        "summary": "The customer is inquiring about the availability of onboarding calls for new enterprise accounts."
+      },
+      "latency_ms": 1384.0381000190973,
+      "error": null
+    },
+    {
+      "id": "case_090",
+      "output": {
+        "category": "general",
+        "summary": "Customer is requesting a comparison between our product and a competitor to assist with their purchasing decision."
+      },
+      "latency_ms": 854.6130000031553,
+      "error": null
+    },
+    {
+      "id": "case_091",
+      "output": {
+        "category": "general",
+        "summary": "The customer initiated a casual greeting."
+      },
+      "latency_ms": 878.8670999929309,
+      "error": null
+    },
+    {
+      "id": "case_092",
+      "output": {
+        "category": "general",
+        "summary": "The customer is inquiring about potential sponsorship for a developer meetup."
+      },
+      "latency_ms": 2615.681700001005,
+      "error": null
+    },
+    {
+      "id": "case_093",
+      "output": {
+        "category": "general",
+        "summary": "The user is inquiring about the technology stack used to power the system."
+      },
+      "latency_ms": 732.3330999934115,
+      "error": null
+    },
+    {
+      "id": "case_094",
+      "output": {
+        "category": "general",
+        "summary": "Customer is inquiring about the correct contact information for support services."
+      },
+      "latency_ms": 1245.2155000064522,
+      "error": null
+    },
+    {
+      "id": "case_095",
+      "output": {
+        "category": "general",
+        "summary": "The customer is offering congratulations regarding the company's recent funding news."
+      },
+      "latency_ms": 1099.7227000189014,
+      "error": null
+    },
+    {
+      "id": "case_096",
+      "output": {
+        "category": "general",
+        "summary": "The customer is inquiring about the availability of a status page to check for ongoing service outages."
+      },
+      "latency_ms": 1244.1728000412695,
+      "error": null
+    },
+    {
+      "id": "case_097",
+      "output": {
+        "category": "general",
+        "summary": "Customer is providing positive feedback and thanking the support team for previous assistance."
+      },
+      "latency_ms": 692.2477000043727,
+      "error": null
+    },
+    {
+      "id": "case_098",
+      "output": {
+        "category": "general",
+        "summary": "Customer is inquiring about the existence of a Discord server or community forum for users."
+      },
+      "latency_ms": 796.1691999807954,
+      "error": null
+    },
+    {
+      "id": "case_099",
+      "output": {
+        "category": "general",
+        "summary": "The user provided an ambiguous query and needs assistance."
+      },
+      "latency_ms": 718.9070000313222,
+      "error": null
+    },
+    {
+      "id": "case_100",
+      "output": {
+        "category": "general",
+        "summary": "The customer is following up on the status of a previously discussed partnership proposal."
+      },
+      "latency_ms": 694.1055000061169,
+      "error": null
+    }
+  ]
+}

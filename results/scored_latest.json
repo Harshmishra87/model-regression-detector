@@ -3,700 +3,700 @@
     "id": "case_001",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1185.5406999820843,
+    "latency_ms": 600.9413140000036,
     "error": null
   },
   {
     "id": "case_002",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 726.4361000270583,
+    "latency_ms": 565.2590139999986,
     "error": null
   },
   {
     "id": "case_003",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1336.582499963697,
+    "latency_ms": 514.9336030000029,
     "error": null
   },
   {
     "id": "case_004",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 935.8866999973543,
+    "latency_ms": 482.04160800000295,
     "error": null
   },
   {
     "id": "case_005",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 677.9721000348218,
+    "latency_ms": 526.0959809999974,
     "error": null
   },
   {
     "id": "case_006",
     "category_score": 1,
     "quality_score": 4,
-    "latency_ms": 1491.196199960541,
+    "latency_ms": 460.75104999999894,
     "error": null
   },
   {
     "id": "case_007",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1241.8725999887101,
+    "latency_ms": 589.5509090000104,
     "error": null
   },
   {
     "id": "case_008",
     "category_score": 1,
-    "quality_score": 5,
-    "latency_ms": 1064.087799983099,
+    "quality_score": 4,
+    "latency_ms": 558.0797100000012,
     "error": null
   },
   {
     "id": "case_009",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1625.5446000141092,
+    "latency_ms": 477.9315879999899,
     "error": null
   },
   {
     "id": "case_010",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1179.440899984911,
+    "latency_ms": 499.7652730000084,
     "error": null
   },
   {
     "id": "case_011",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 879.4170000473969,
+    "latency_ms": 495.1539999999994,
     "error": null
   },
   {
     "id": "case_012",
     "category_score": 1,
-    "quality_score": 4,
-    "latency_ms": 1246.8975000083447,
+    "quality_score": 5,
+    "latency_ms": 483.1225500000045,
     "error": null
   },
   {
     "id": "case_013",
-    "category_score": 1,
+    "category_score": 0,
     "quality_score": 5,
-    "latency_ms": 1714.7389000165276,
+    "latency_ms": 595.3778679999999,
     "error": null
   },
   {
     "id": "case_014",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1684.8246000008658,
+    "latency_ms": 484.1480839999974,
     "error": null
   },
   {
     "id": "case_015",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1344.8951999889687,
+    "latency_ms": 654.1154220000038,
     "error": null
   },
   {
     "id": "case_016",
     "category_score": 0,
     "quality_score": 5,
-    "latency_ms": 745.3291999991052,
+    "latency_ms": 519.0374180000106,
     "error": null
   },
   {
     "id": "case_017",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1700.4477000446059,
+    "latency_ms": 417.0101539999962,
     "error": null
   },
   {
     "id": "case_018",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 803.3173999865539,
+    "latency_ms": 429.52652099998545,
     "error": null
   },
   {
     "id": "case_019",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1081.5352000063285,
+    "latency_ms": 545.7328699999948,
     "error": null
   },
   {
     "id": "case_020",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 938.3967000176199,
+    "latency_ms": 663.7095239999837,
     "error": null
   },
   {
     "id": "case_021",
-    "category_score": 1,
+    "category_score": 0,
     "quality_score": 5,
-    "latency_ms": 1232.1576999966055,
+    "latency_ms": 583.6665299999879,
     "error": null
   },
   {
     "id": "case_022",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1541.7042000335641,
+    "latency_ms": 614.3413389999921,
     "error": null
   },
   {
     "id": "case_023",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1189.653699984774,
+    "latency_ms": 624.3323109999892,
     "error": null
   },
   {
     "id": "case_024",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1069.2365000140853,
+    "latency_ms": 468.4656889999985,
     "error": null
   },
   {
     "id": "case_025",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 955.6422000168823,
+    "latency_ms": 561.3644759999943,
     "error": null
   },
   {
     "id": "case_026",
     "category_score": 0,
     "quality_score": 5,
-    "latency_ms": 1132.6208999962546,
+    "latency_ms": 1109.7174430000223,
     "error": null
   },
   {
     "id": "case_027",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1831.536200013943,
+    "latency_ms": 577.3853149999866,
     "error": null
   },
   {
     "id": "case_028",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 936.2477000104263,
+    "latency_ms": 542.7479770000048,
     "error": null
   },
   {
     "id": "case_029",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1070.8531999844126,
+    "latency_ms": 543.1625250000138,
     "error": null
   },
   {
     "id": "case_030",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 945.0183999724686,
+    "latency_ms": 569.5077700000013,
     "error": null
   },
   {
     "id": "case_031",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1395.5298000364564,
+    "latency_ms": 697.234208999987,
     "error": null
   },
   {
     "id": "case_032",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 832.5315999682061,
+    "latency_ms": 541.4710000000014,
     "error": null
   },
   {
     "id": "case_033",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 2465.1713999919593,
+    "latency_ms": 583.4172380000098,
     "error": null
   },
   {
     "id": "case_034",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1051.1955000110902,
+    "latency_ms": 497.38181600000075,
     "error": null
   },
   {
     "id": "case_035",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1022.5283000036143,
+    "latency_ms": 571.1825059999853,
     "error": null
   },
   {
     "id": "case_036",
     "category_score": 0,
     "quality_score": 5,
-    "latency_ms": 1034.3059999868274,
+    "latency_ms": 586.7398800000103,
     "error": null
   },
   {
     "id": "case_037",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1033.0063999863341,
+    "latency_ms": 522.2906909999949,
     "error": null
   },
   {
     "id": "case_038",
     "category_score": 1,
     "quality_score": 4,
-    "latency_ms": 1021.0326000233181,
+    "latency_ms": 541.0716159999822,
     "error": null
   },
   {
     "id": "case_039",
     "category_score": 1,
     "quality_score": 4,
-    "latency_ms": 1237.3385000391863,
+    "latency_ms": 592.7213039999799,
     "error": null
   },
   {
     "id": "case_040",
     "category_score": 1,
-    "quality_score": 5,
-    "latency_ms": 1855.187900015153,
+    "quality_score": 4,
+    "latency_ms": 557.1266900000182,
     "error": null
   },
   {
     "id": "case_041",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1244.952299981378,
+    "latency_ms": 571.1280909999914,
     "error": null
   },
   {
     "id": "case_042",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1015.9850000054576,
+    "latency_ms": 646.1847490000423,
     "error": null
   },
   {
     "id": "case_043",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 859.3158000148833,
+    "latency_ms": 607.0553530000211,
     "error": null
   },
   {
     "id": "case_044",
     "category_score": 1,
-    "quality_score": 4,
-    "latency_ms": 2165.413900045678,
+    "quality_score": 5,
+    "latency_ms": 625.7400530000155,
     "error": null
   },
   {
     "id": "case_045",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 2147.3113000392914,
+    "latency_ms": 699.8296290000212,
     "error": null
   },
   {
     "id": "case_046",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1032.085000013467,
+    "latency_ms": 590.7845230000248,
     "error": null
   },
   {
     "id": "case_047",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1142.9970000172034,
+    "latency_ms": 660.9920029999898,
     "error": null
   },
   {
     "id": "case_048",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1929.6169999870472,
+    "latency_ms": 554.5890319999671,
     "error": null
   },
   {
     "id": "case_049",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1766.3728999905288,
+    "latency_ms": 497.19694300000583,
     "error": null
   },
   {
     "id": "case_050",
     "category_score": 1,
-    "quality_score": 5,
-    "latency_ms": 2298.8490000134334,
+    "quality_score": 4,
+    "latency_ms": 519.2618850000486,
     "error": null
   },
   {
     "id": "case_051",
     "category_score": 0,
     "quality_score": 5,
-    "latency_ms": 1894.0419999998994,
+    "latency_ms": 580.5619629999796,
     "error": null
   },
   {
     "id": "case_052",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 817.9369000135921,
+    "latency_ms": 567.431474999978,
     "error": null
   },
   {
     "id": "case_053",
-    "category_score": 1,
+    "category_score": 0,
     "quality_score": 5,
-    "latency_ms": 975.1516000251286,
+    "latency_ms": 634.3666660000054,
     "error": null
   },
   {
     "id": "case_054",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 897.7970000123605,
+    "latency_ms": 550.7404130000282,
     "error": null
   },
   {
     "id": "case_055",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1110.2376999915577,
+    "latency_ms": 625.2464599999712,
     "error": null
   },
   {
     "id": "case_056",
     "category_score": 1,
-    "quality_score": 5,
-    "latency_ms": 1056.8492999882437,
+    "quality_score": 4,
+    "latency_ms": 438.3273419999796,
     "error": null
   },
   {
     "id": "case_057",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 990.2445999905467,
+    "latency_ms": 554.1225860000054,
     "error": null
   },
   {
     "id": "case_058",
-    "category_score": 1,
+    "category_score": 0,
     "quality_score": 5,
-    "latency_ms": 663.1761999451555,
+    "latency_ms": 586.6973250000456,
     "error": null
   },
   {
     "id": "case_059",
     "category_score": 0,
     "quality_score": 5,
-    "latency_ms": 928.5902999690734,
+    "latency_ms": 682.3162489999959,
     "error": null
   },
   {
     "id": "case_060",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1355.1444999757223,
+    "latency_ms": 689.3847849999588,
     "error": null
   },
   {
     "id": "case_061",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 927.6939999544993,
+    "latency_ms": 577.5575050000157,
     "error": null
   },
   {
     "id": "case_062",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1060.8520000241697,
+    "latency_ms": 534.7097889999759,
     "error": null
   },
   {
     "id": "case_063",
-    "category_score": 1,
+    "category_score": 0,
     "quality_score": 5,
-    "latency_ms": 1416.3218999747187,
+    "latency_ms": 673.6472849999586,
     "error": null
   },
   {
     "id": "case_064",
-    "category_score": 1,
+    "category_score": 0,
     "quality_score": 5,
-    "latency_ms": 1036.7632000125013,
+    "latency_ms": 493.48766099996055,
     "error": null
   },
   {
     "id": "case_065",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 662.1007999638095,
+    "latency_ms": 589.4065589999968,
     "error": null
   },
   {
     "id": "case_066",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 694.5613999851048,
+    "latency_ms": 748.7870109999903,
     "error": null
   },
   {
     "id": "case_067",
     "category_score": 0,
     "quality_score": 5,
-    "latency_ms": 968.7843999709003,
+    "latency_ms": 531.1218979999808,
     "error": null
   },
   {
     "id": "case_068",
     "category_score": 0,
     "quality_score": 5,
-    "latency_ms": 1728.0518000479788,
+    "latency_ms": 492.696240999976,
     "error": null
   },
   {
     "id": "case_069",
-    "category_score": 1,
+    "category_score": 0,
     "quality_score": 5,
-    "latency_ms": 1944.2037000553682,
+    "latency_ms": 474.95999199998096,
     "error": null
   },
   {
     "id": "case_070",
     "category_score": 1,
     "quality_score": 2,
-    "latency_ms": 1236.892499960959,
+    "latency_ms": 583.4277950000342,
     "error": null
   },
   {
     "id": "case_071",
     "category_score": 0,
     "quality_score": 5,
-    "latency_ms": 1021.3921000249684,
+    "latency_ms": 528.5227560000294,
     "error": null
   },
   {
     "id": "case_072",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 831.5749999601394,
+    "latency_ms": 608.2176410000102,
     "error": null
   },
   {
     "id": "case_073",
-    "category_score": 1,
+    "category_score": 0,
     "quality_score": 5,
-    "latency_ms": 1861.7018000222743,
+    "latency_ms": 601.0738379999907,
     "error": null
   },
   {
     "id": "case_074",
-    "category_score": 1,
+    "category_score": 0,
     "quality_score": 5,
-    "latency_ms": 3673.2032999861985,
+    "latency_ms": 578.557998000008,
     "error": null
   },
   {
     "id": "case_075",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1764.780499972403,
+    "latency_ms": 555.6597730000021,
     "error": null
   },
   {
     "id": "case_076",
     "category_score": 1,
-    "quality_score": 5,
-    "latency_ms": 1548.72439999599,
+    "quality_score": 4,
+    "latency_ms": 543.6031360000015,
     "error": null
   },
   {
     "id": "case_077",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1195.619700010866,
+    "latency_ms": 640.5708719999552,
     "error": null
   },
   {
     "id": "case_078",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1229.0407000109553,
+    "latency_ms": 615.9108840000158,
     "error": null
   },
   {
     "id": "case_079",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 913.5840999661013,
+    "latency_ms": 510.665213999971,
     "error": null
   },
   {
     "id": "case_080",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 723.2263999758288,
+    "latency_ms": 567.8322620000245,
     "error": null
   },
   {
     "id": "case_081",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 710.2890000096522,
+    "latency_ms": 515.0937710000107,
     "error": null
   },
   {
     "id": "case_082",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 683.4666999639012,
+    "latency_ms": 605.1462500000184,
     "error": null
   },
   {
     "id": "case_083",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 639.6439999807626,
+    "latency_ms": 724.8478889999888,
     "error": null
   },
   {
     "id": "case_084",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 693.7166000134312,
+    "latency_ms": 640.0661449999916,
     "error": null
   },
   {
     "id": "case_085",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 824.4604999781586,
+    "latency_ms": 455.6203900000355,
     "error": null
   },
   {
     "id": "case_086",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 717.1233000117354,
+    "latency_ms": 554.4990329999564,
     "error": null
   },
   {
     "id": "case_087",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 842.5920000299811,
+    "latency_ms": 618.1408549999787,
     "error": null
   },
   {
     "id": "case_088",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 789.073699968867,
+    "latency_ms": 562.030871999923,
     "error": null
   },
   {
     "id": "case_089",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1384.0381000190973,
+    "latency_ms": 569.2235340000025,
     "error": null
   },
   {
     "id": "case_090",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 854.6130000031553,
+    "latency_ms": 484.69426300005125,
     "error": null
   },
   {
     "id": "case_091",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 878.8670999929309,
+    "latency_ms": 695.7454650000727,
     "error": null
   },
   {
     "id": "case_092",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 2615.681700001005,
+    "latency_ms": 533.6608820000492,
     "error": null
   },
   {
     "id": "case_093",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 732.3330999934115,
+    "latency_ms": 481.6233669999974,
     "error": null
   },
   {
     "id": "case_094",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1245.2155000064522,
+    "latency_ms": 485.97751299996617,
     "error": null
   },
   {
     "id": "case_095",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1099.7227000189014,
+    "latency_ms": 534.4996589999482,
     "error": null
   },
   {
     "id": "case_096",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 1244.1728000412695,
+    "latency_ms": 521.5080699999817,
     "error": null
   },
   {
     "id": "case_097",
     "category_score": 1,
-    "quality_score": 5,
-    "latency_ms": 692.2477000043727,
+    "quality_score": 4,
+    "latency_ms": 504.16218400005164,
     "error": null
   },
   {
     "id": "case_098",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 796.1691999807954,
+    "latency_ms": 616.913822000015,
     "error": null
   },
   {
     "id": "case_099",
     "category_score": 1,
     "quality_score": 2,
-    "latency_ms": 718.9070000313222,
+    "latency_ms": 658.3956169999965,
     "error": null
   },
   {
     "id": "case_100",
     "category_score": 1,
     "quality_score": 5,
-    "latency_ms": 694.1055000061169,
+    "latency_ms": 698.0513960000962,
     "error": null
   }
 ]
